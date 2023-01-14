@@ -1,0 +1,100 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #6f14d0;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .card{
+    position: relative;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 270px;
+    height: 440px;
+    margin-left: 15px;
+    transition: .5s;
+    overflow: hidden;
+}
+.container .card:hover{
+    box-shadow: 10px 1px 15px 4px rgba(123, 172, 255, 0.329);
+}
+.container .card .img-box{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;  
+}
+.container .card:hover .img-box {
+    opacity: .5;
+}
+
+.container .card .img-box img{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+.container .card .content{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card:hover .content {
+    bottom: 0;
+}
+.container .card:nth-child(1) .content{
+    background: linear-gradient(0deg, #183188, transparent);
+}
+
+.container .card:nth-child(2) .content{
+    background: linear-gradient(0deg, #00000075, transparent);
+}
+
+.container .card:nth-child(3) .content{
+    background: linear-gradient(0deg, #ffffff9c, transparent);
+}
+
+.container .card:nth-child(4) .content{
+    background: linear-gradient(0deg, #ffc31eab, transparent);
+}
+
+.container .card .content h2{
+    margin: 0 0 10px ;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+
+}
+.container .card .content h2 span{
+    color: #ffff00;
+    font-size: 16px;
+}
+.content ul{
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.content ul li{
+    display: inline-block;
+    list-style: none;
+}
+.content ul li a{
+    color: #fff;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.content p{
+    color: #ccc;
+    font-size: 15px;
+}
